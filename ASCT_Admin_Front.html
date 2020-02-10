@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<head id="head">
     <meta charset="utf-8" />
     <title>Alaska Airlines Software Configuration Tool</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="ASCT_Admin_Style.css">
 </head>
+
 <body>
+    <div class="container-fluid" id="box"> </div>
+    <br>
     <h1 id="title">Alaska Airlines Software Configuration <b>Admin</b> Tool</h1>
     <br>
+    <div> </div>
     <div id="fleet-select">
         <button type="button" class="btn btn-outline-primary">Boeing</button>
         <button type="button" class="btn btn-outline-primary">Airbus</button>
@@ -82,10 +86,22 @@
     </div>
 
     <br />
-    <div id="pre-post-section">
-      <input type="radio" name="pre-post-condition" value="Pre">Pre<br>
-      <input type="radio" name="pre-post-condition" value="Pre">Pre<br>
-      <input type="radio" name="pre-post-condition" value="None">None<br>
+
+    <div id="part-number-status">
+        <h2 id="status-select"><b> -- EC Status -- </b></h2>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="status-option" id="inlineRadio1" value="pre">
+            <label class="form-check-label" for="inlineRadio1">  Pre </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="status-option" id="inlineRadio2" value="post">
+            <label class="form-check-label" for="inlineRadio2">  Post </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="status-option" id="inlineRadio3" value="none">
+            <label class="form-check-label" for="inlineRadio3">  None </label>
+        </div>
+
     </div>
 
     <br />
@@ -102,5 +118,8 @@
     <div id="submit">
         <input class="btn btn-primary" type="submit" value="Submit">
     </div>
+    <br>
+    <br>
+    <div class="container-fluid" id="box"> </div>
 </body>
 </html>

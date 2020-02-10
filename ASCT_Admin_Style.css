@@ -1,18 +1,38 @@
-h1 {
 
-
-
+#box {
+    background-color: #002b80;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-#fleet-select {
-    width: 70%;
-    margin-left: 400px;
+#part-number-status {
+    text-align: center;
+}
 
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: medium;
+}
+
+
+#fleet-select {
+    text-align: center;
 }
 
 body {
     width: 70%;
-    margin: 100px 100px 100px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.form-check-inline {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #submit {
